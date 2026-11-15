@@ -1,4 +1,4 @@
-import { unzip } from '../vendor/fflate.js';
+import { unzip } from '../assets/fflate.js';
 
 const decoder = new TextDecoder('utf-8');
 const mediaTypes = { jpg: 'image/jpeg', jpeg: 'image/jpeg', png: 'image/png', gif: 'image/gif', avif: 'image/avif', webp: 'image/webp', mp4: 'video/mp4', mov: 'video/quicktime' };
