@@ -25,6 +25,12 @@ npm run build
 
 Publish the contents of `dist/` to any static host. HTTPS is needed for service worker based offline use on a hosted site. After the first visit, the app shell can load offline; users choose the ZIP again each session because archive contents remain in memory only.
 
+## Deploy to GitHub Pages
+
+The `Deploy to GitHub Pages` workflow builds `dist/` and deploys it when changes are pushed to `main`. You can also run it manually from **Actions → Deploy to GitHub Pages → Run workflow**. The project uses a custom static build script rather than Vite; app asset and service-worker URLs are relative so the build works at the project Pages path: <https://jcyunmrrr.github.io/FBBackupViewer/>.
+
+Before the first deployment, set **Repository → Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The workflow run appears under the Actions tab; after it completes, GitHub Pages publishes the site at the URL above. HTTPS is required for service worker offline caching, and GitHub Pages serves the site over HTTPS.
+
 ## Current scope
 
 - Profile timeline with posts, photos, search, and a media viewer. The viewer supports on-screen and keyboard arrow navigation, with media-specific tags and descriptions in its information panel.

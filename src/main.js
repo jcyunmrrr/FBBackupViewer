@@ -6,7 +6,7 @@ function syncPageLanguage() {
   document.documentElement.lang = locale;
   document.title = t('title');
   document.querySelector('meta[name="description"]').content = t('description');
-  document.querySelector('link[rel="manifest"]').href = locale === 'en' ? '/manifest.en.webmanifest' : '/manifest.webmanifest';
+  document.querySelector('link[rel="manifest"]').href = locale === 'en' ? 'manifest.en.webmanifest' : 'manifest.webmanifest';
 }
 syncPageLanguage();
 let archive = null;
@@ -399,4 +399,4 @@ window.addEventListener('keydown', event => {
   }
 });
 render();
-if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(() => {});
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
