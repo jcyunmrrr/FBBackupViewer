@@ -1,0 +1,11 @@
+{
+  "name": "Facebook 備份瀏覽器",
+  "short_name": "備份瀏覽器",
+  "description": "私密且可離線瀏覽 Facebook 備份。",
+  "lang": "zh-TW",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0f2f5",
+  "theme_color": "#f0f2f5",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

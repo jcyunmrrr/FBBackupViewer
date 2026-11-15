@@ -1,0 +1,13 @@
+{
+  "name": "facebook-archive-viewer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "fflate": "^0.8.2"
+  }
+}
